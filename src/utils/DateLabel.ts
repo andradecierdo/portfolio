@@ -1,5 +1,5 @@
 export const getSchoolYearLabel = (starDate: Date, endDate?: Date): string => {
-  const endYear = endDate?.getFullYear() || 'Current'
+  const endYear = endDate?.getFullYear() || 'Present'
   return `(${starDate.getFullYear()} - ${endYear})`
 }
 
@@ -8,6 +8,6 @@ export const getDateLabel = (d: Date): string => {
 }
 
 export const getDurationLabel = (starDate: Date, endDate?: Date): string => {
-  const endYear = endDate ? getDateLabel(endDate) : 'Current'
+  const endYear = endDate ? getDateLabel(endDate) : 'Present'
   return `(${getDateLabel(starDate)} - ${endYear})`
 }

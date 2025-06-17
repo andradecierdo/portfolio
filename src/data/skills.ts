@@ -22,6 +22,16 @@ export const skills: ISkill[] = [
     level: 90,
   },
   {
+    id: 15,
+    name: 'Code Igniter',
+    level: 80,
+  },
+  {
+    id: 16,
+    name: 'NestJs',
+    level: 80,
+  },
+  {
     id: 5,
     name: 'GraphQL',
     level: 80,
