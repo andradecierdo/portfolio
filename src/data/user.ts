@@ -215,6 +215,25 @@ const codevProjects: IProject[] = [
   }
 ]
 
+const xtractaCompany: ICompany = {
+  id: 4,
+  userId: 1,
+  name: 'Xtracta',
+  address: 'Auckland, New Zealand',
+  logo: '/portfolio/company/xtracta-logo.png', // logo path
+  details: 'Provides AI-powered data extraction software and OCR solutions to help organization with all kinds of document automation',
+  website: 'https://xtracta.com/',
+  email: '',
+  phone: '',
+  skills: [1, 3, 16, 5, 6, 8, 9, 10, 13, 14, 15],
+  responsibilities: [
+    'Rapidly adapted to and resolved issues in legacy codebases, reducing debugging time while maintaining strict adherence to coding standards and best practices',
+    'Proactively refactored legacy code, improving maintainability and application performance by 25%, and created comprehensive documentation to enhance team collaboration and onboarding',
+    'Supported migration efforts to modern stacks like React and Node.js, contributing to both frontend and backend tasks, accelerating feature delivery by 30%',
+    'Optimized complex MySQL queries using advanced techniques such as table joins, indexing, and subqueries, to handle high-volume transactions across thousands of records, significantly reducing loading times and improving database performance by up to 50%',
+  ]
+}
+
 const codevCompany: ICompany = {
   id: 2,
   userId: 1,
@@ -245,6 +264,19 @@ const snowballEffectCompany: ICompany = {
 }
 
 const experiences: IExperience[] = [
+  {
+    id: 4,
+    userId: 1,
+    companyId: 3,
+    company: xtractaCompany,
+    projects: [],
+    position: {
+      id: 1,
+      name: 'Full Stack Engineer',
+    },
+    startDate: new Date(2025, 1, 17),
+    // endDate: new Date(2025, 6, 16),
+  },
   {
     id: 1,
     userId: 1,
@@ -321,7 +353,7 @@ export const myProfile: IUserDetails = {
   education,
   experiences,
   references: [],
-  mainSkills: [1, 2, 3, 4, 5, 6, 7, 8],
+  mainSkills: [1, 2, 3, 16, 15, 4, 5, 6, 7, 8],
   skills: [9, 10, 11, 12, 13, 14],
   socialMedia,
   overview: 'A full stack engineer with over 7 years of experience with ' +
